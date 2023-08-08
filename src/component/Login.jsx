@@ -24,7 +24,7 @@ const Login = () => {
 // }
 
 const handleLogin = () => {
-  if(user.name === "rahul" && user.password === "1234" ) {
+  if(user.name === "rahul@123" && user.password === "1234" ) {
     setlogin(true);
   } else {
     alert("Enter Proper Credentials");
@@ -44,7 +44,7 @@ const handleLogin = () => {
             <div className="rightwala">
                  <h1 style={{marginRight:"170px",color:"white",textAlign:"start"}}>Welcome Back,</h1>
                  <p style={{marginRight:"300px",color:"white"}}>Sign to Your Account</p>
-                 <label htmlFor="" style={{color:"white",marginLeft:"110px"}}>Email</label>
+                 <label htmlFor="" style={{color:"white",width:"100%",marginLeft:"200px"}}>Email-rahul@123</label>
                  <input onChange={(e) => {
             setUser({
               ...user,
@@ -52,7 +52,7 @@ const handleLogin = () => {
             });
           }} type="email" />
                  <br />
-                 <label style={{color:"white",marginLeft:"150px"}} htmlFor="">Password</label>
+                 <label style={{color:"white",marginLeft:"180px",width:"100%"}} htmlFor="">Password-1234</label>
                  <input onChange={(e) => {
             setUser({
               ...user,

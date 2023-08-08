@@ -6,6 +6,7 @@ import { myContext } from './Context';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import axios from 'axios';
+import rahul from './assest/Rahul-project.png'
 const Navbar = () => {
   const {search,setSearch,SetRated,SetPopular}=useContext(myContext)
   const SEARCHAPI =
@@ -48,7 +49,7 @@ value={search}
 />
 </InputGroup>
 </div> 
-                <li  style={{color:"white",border:"2px solid white",borderRadius:"50%"}}> <img style={{borderRadius:"50%"}} width={60} height={60} src="https://scontent.fdel27-3.fna.fbcdn.net/v/t39.30808-6/313399682_1839652096370218_7258087817723408521_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xwHwyCv2l38AX-3eB3m&_nc_ht=scontent.fdel27-3.fna&oh=00_AfC4t0Dm11rh019zI6qIIyLAVfz7fOugdDT9CByOhrigmw&oe=6455EDDB" alt="" />   </li>
+                <li  style={{color:"white",border:"2px solid white",borderRadius:"50%"}}> <img style={{borderRadius:"50%",background:"cover"}} width={60} height={60} src={rahul} alt="" />   </li>
                 <li className='logout' ><Logout  /></li>
             </ul>
         </div>
